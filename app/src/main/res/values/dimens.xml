@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="padding_little">16dp</dimen>
+    <dimen name="padding_default">24dp</dimen>
+
+    <dimen name="margin_micro">8dp</dimen>
+    <dimen name="margin_default">32dp</dimen>
+    <dimen name="margin_big">64dp</dimen>
+
+    <dimen name="space_between_element">16dp</dimen>
+
+    <dimen name="caption_size">24sp</dimen>
+    <dimen name="help_size">18sp</dimen>
+
+    <dimen name="pitch_and_rate_tv_size">50dp</dimen>
+</resources>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Clean Architect Kotlin Flow Hilt Simplest way</string>
+    <string name="login_remember"><u>Забыли пароль?</u></string>
+    <string name="login_hint_login">Логин (Email)</string>
+    <string name="login_btn_caption">Войти</string>
+    <string name="login_hint_password">Пароль</string>
+    <string name="login_cb_caption">Запонить</string>
+    <string name="login_tv_enter">Вход в приложение</string>
+    <string name="choose_tv_caption">Изучаем слова из списка</string>
+    <string name="choose_btn_text">Добавить список</string>
+    <string name="task_tv_caption">Studying</string>
+    <string name="task_btn_listen">Listen</string>
+    <string name="task_btn_help">Help</string>
+    <string name="task_btn_check">Check</string>
+    <string name="task_btn_list">list</string>
+    <string name="task_cb_random">Random</string>
+    <string name="task_tv_rate">Rate</string>
+    <string name="task_tv_pitch">Pitch</string>
+    <string name="task_btn_listen_all">Listen All</string>
+</resources>

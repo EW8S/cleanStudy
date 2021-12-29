@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.TaskFragment">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/task_gl_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/padding_default" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/task_gl_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/padding_default" />
+
+    <TextView
+        android:id="@+id/task_tv_work_title"
+        style="@style/tv_caption"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_default"
+        android:text="@string/task_tv_caption"
+        app:layout_constraintEnd_toStartOf="@+id/task_gl_right"
+        app:layout_constraintStart_toStartOf="@+id/task_gl_left"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/task_tv_task"
+        style="@style/tv_task"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_little"
+        tools:text="TextView"
+        app:layout_constraintEnd_toStartOf="@+id/task_gl_right"
+        app:layout_constraintStart_toStartOf="@+id/task_gl_left"
+        app:layout_constraintTop_toBottomOf="@+id/task_tv_work_title" />
+
+    <EditText
+        android:id="@+id/task_et_work_answer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_little"
+        style="@style/ed_task_work"
+        app:layout_constraintEnd_toStartOf="@+id/task_gl_right"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/task_gl_left"
+        app:layout_constraintTop_toBottomOf="@+id/task_tv_help" />
+
+    <TextView
+        android:id="@+id/task_tv_help"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_default"
+        style="@style/tv_help"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/task_gl_right"
+        app:layout_constraintStart_toStartOf="@+id/task_gl_left"
+        app:layout_constraintTop_toBottomOf="@+id/task_tv_task" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/task_gl_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"/>
+
+    <Button
+        android:id="@+id/task_btn_work_listen"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_little"
+        android:layout_marginEnd="@dimen/margin_micro"
+        android:text="@string/task_btn_listen"
+        app:layout_constraintEnd_toStartOf="@+id/task_gl_center"
+        app:layout_constraintStart_toStartOf="@+id/task_gl_left"
+        app:layout_constraintTop_toBottomOf="@+id/task_et_work_answer" />
+
+    <Button
+        android:id="@+id/btn_work_help"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_micro"
+        android:layout_marginTop="@dimen/padding_little"
+        android:text="@string/task_btn_help"
+        app:layout_constraintEnd_toStartOf="@+id/task_gl_right"
+        app:layout_constraintStart_toStartOf="@+id/task_gl_center"
+        app:layout_constraintTop_toBottomOf="@+id/task_et_work_answer" />
+
+    <Button
+        android:id="@+id/btn_work_check"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_default"
+        android:text="@string/task_btn_check"
+        app:layout_constraintEnd_toStartOf="@+id/task_gl_right"
+        app:layout_constraintStart_toStartOf="@+id/task_gl_left"
+        app:layout_constraintTop_toBottomOf="@+id/btn_work_help" />
+
+    <Button
+        android:id="@+id/btn_work_list"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/padding_default"
+        android:text="@string/task_btn_list"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/task_gl_right"
+        app:layout_constraintStart_toStartOf="@+id/task_gl_left" />
+
+    <Switch
+        android:id="@+id/sw_work_random"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_little"
+        android:text="@string/task_cb_random"
+        app:layout_constraintEnd_toStartOf="@+id/task_gl_right"
+        app:layout_constraintStart_toStartOf="@+id/task_gl_left"
+        app:layout_constraintTop_toBottomOf="@+id/btn_work_check" />
+
+    <SeekBar
+        android:id="@+id/sb_work_rate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/padding_little"
+        android:min="5"
+        android:max="15"
+        android:progress="10"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintEnd_toStartOf="@+id/task_gl_right"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+    <SeekBar
+        android:id="@+id/sb_work_pitch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/padding_little"
+        android:min="5"
+        android:max="15"
+        android:progress="10"
+        app:layout_constraintBottom_toBottomOf="@+id/textView7"
+        app:layout_constraintEnd_toStartOf="@+id/task_gl_right"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toTopOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="@dimen/pitch_and_rate_tv_size"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_default"
+        android:text="@string/task_tv_rate"
+        app:layout_constraintStart_toStartOf="@+id/task_gl_left"
+        app:layout_constraintTop_toBottomOf="@+id/sw_work_random" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="@dimen/pitch_and_rate_tv_size"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_little"
+        android:text="@string/task_tv_pitch"
+        app:layout_constraintStart_toStartOf="@+id/task_gl_left"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <Button
+        android:id="@+id/btn_work_listen_all"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_little"
+        android:text="@string/task_btn_listen_all"
+        app:layout_constraintEnd_toStartOf="@+id/task_gl_right"
+        app:layout_constraintStart_toStartOf="@+id/task_gl_left"
+        app:layout_constraintTop_toBottomOf="@+id/sb_work_pitch" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="tv_caption">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">@dimen/caption_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="tv_task">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">@dimen/caption_size</item>
+    </style>
+
+    <style name="tv_help" parent="tv_task">
+        <item name="android:textSize">@dimen/help_size</item>
+    </style>
+
+    <style name="ed_task_work">
+        <item name="android:ems">10</item>
+        <item name="android:inputType">textPersonName</item>>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">@dimen/caption_size</item>
+
+    </style>
+
+    <style name="tv_link">
+        <item name="android:textColor">@color/purple_500</item>
+    </style>
+</resources>
