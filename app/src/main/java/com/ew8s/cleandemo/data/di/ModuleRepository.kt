@@ -1,4 +1,4 @@
-package com.ew8s.cleandemo.cleandemo.data.di
+package com.ew8s.cleandemo.data.di
 
 import com.ew8s.cleandemo.cleandemo.data.local.UserDao
 import com.ew8s.cleandemo.cleandemo.data.remote.GitHubService

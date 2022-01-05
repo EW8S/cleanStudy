@@ -9,7 +9,9 @@ import android.widget.CheckBox
 import android.widget.EditText
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
 import com.ew8s.cleandemo.R
+
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -20,6 +22,7 @@ class LoginFragment: Fragment() {
     }
 
     private val viewModel by viewModels<LoginViewModel>()
+
     private lateinit var login: EditText
     private lateinit var password: EditText
     private lateinit var checkRemember: CheckBox

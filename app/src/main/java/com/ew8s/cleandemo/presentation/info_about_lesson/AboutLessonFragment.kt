@@ -5,7 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.ew8s.cleandemo.cleandemo.R
+import androidx.fragment.app.viewModels
+import com.ew8s.cleandemo.R
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

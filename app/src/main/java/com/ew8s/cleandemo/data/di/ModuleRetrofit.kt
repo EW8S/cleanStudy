@@ -1,4 +1,4 @@
-package com.ew8s.cleandemo.cleandemo.data.di
+package com.ew8s.cleandemo.data.di
 
 import com.ew8s.cleandemo.cleandemo.data.remote.GitHubService
 import com.google.gson.Gson
@@ -21,8 +21,8 @@ object ModuleRetrofit {
         .addConverterFactory(GsonConverterFactory.create(gson))
         .build()
 
-//    @Provides
-//    fun provideGson(): Gson = GsonBuilder().create()
+    @Provides
+    fun provideGson(): Gson = GsonBuilder().create()
 
     @Provides
     fun provideGitHubService(retrofit: Retrofit): GitHubService = retrofit.create(GitHubService::class.java)

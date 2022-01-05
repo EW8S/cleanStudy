@@ -1,4 +1,4 @@
-package com.ew8s.domain.model
+package com.ew8s.cleandemo.data.local
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
@@ -6,7 +6,7 @@ import androidx.room.PrimaryKey
 @Entity(tableName = "Lesson")
 data class Lesson(
     @PrimaryKey var id: Int = 1,
-    var lessons: List<Units>
+    //var lessons: List<Units>
 )
 
 data class Units(

@@ -1,4 +1,6 @@
-package com.ew8s.cleandemo.cleandemo.domain.usecases
+package com.ew8s.cleandemo.domain.usecases
 
-class GetAllUseCase {
+import javax.inject.Inject
+
+class GetAllUseCase @Inject constructor(){
 }

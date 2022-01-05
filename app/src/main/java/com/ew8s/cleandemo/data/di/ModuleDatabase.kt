@@ -1,4 +1,4 @@
-package com.ew8s.cleandemo.cleandemo.data.di
+package com.ew8s.cleandemo.data.di
 
 import android.content.Context
 import androidx.room.Room

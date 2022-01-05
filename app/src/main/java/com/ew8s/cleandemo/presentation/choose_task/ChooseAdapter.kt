@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.ew8s.cleandemo.cleandemo.R
+import com.ew8s.cleandemo.R
 import com.ew8s.cleandemo.presentation.IChooseCallback
 
 class ChooseAdapter(private var list: ArrayList<String>, private val callback: IChooseCallback) :

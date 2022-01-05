@@ -1,4 +1,4 @@
-package com.ew8s.cleandemo.cleandemo
+package com.ew8s.cleandemo
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp
