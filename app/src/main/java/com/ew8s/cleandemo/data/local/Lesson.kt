@@ -6,7 +6,7 @@ import androidx.room.PrimaryKey
 @Entity(tableName = "Lesson")
 data class Lesson(
     @PrimaryKey var id: Int = 1,
-    //var lessons: List<Units>
+    var lessons: List<Units>
 )
 
 data class Units(
