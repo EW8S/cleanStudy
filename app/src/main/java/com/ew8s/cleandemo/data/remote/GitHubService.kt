@@ -1,5 +1,6 @@
 package com.ew8s.cleandemo.data.remote
 
+import com.ew8s.cleandemo.data.remote.model.Lessons
 import retrofit2.Call
 import retrofit2.Response
 import retrofit2.http.GET
@@ -12,5 +13,8 @@ interface GitHubService {
 
     @GET("test.php")
     suspend fun listReposTest(): Response<Repos>
+
+    @GET("lesson.json")
+    suspend fun getLessons(): Response<Lessons>
 
 }

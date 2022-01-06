@@ -14,10 +14,10 @@ class MyRepositoryImpl @Inject constructor(
 ): MyRepository {
     override suspend fun getData() {
         try {
-            val ren = remoteData.listReposTest()
+            val ren = remoteData.getLessons()
 
             if(ren.isSuccessful){
-                ren.body()?.forEach {
+                ren.body()?.lessons?.forEach {
                     println(it.toString())
                 }
                 println("OK")
@@ -27,8 +27,6 @@ class MyRepositoryImpl @Inject constructor(
         } catch (e:Exception){
             println("Exception")
         }
-
-
 
     }
 }
