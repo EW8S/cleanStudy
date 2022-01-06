@@ -3,10 +3,20 @@ package com.ew8s.cleandemo.presentation.login
 import androidx.lifecycle.ViewModel
 import com.ew8s.cleandemo.domain.usecases.GetAllUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class LoginViewModel @Inject constructor(private val sampleUseCase: GetAllUseCase) : ViewModel() {
+class LoginViewModel @Inject constructor(private val getAllUseCase: GetAllUseCase) : ViewModel() {
+
+    fun getData(){
+        CoroutineScope( Dispatchers.IO).launch {
+            getAllUseCase.getAllData()
+        }
+    }
+
 
     //val navigation = MutableLiveData<FragmentEnum>()
 

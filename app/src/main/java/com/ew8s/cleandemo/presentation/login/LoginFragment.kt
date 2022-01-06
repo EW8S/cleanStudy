@@ -59,6 +59,8 @@ class LoginFragment: Fragment() {
             viewModel.restore()
         }
 
+        viewModel.getData()
+
     }
 
 }

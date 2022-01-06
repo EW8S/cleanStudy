@@ -1,9 +1,9 @@
 package com.ew8s.cleandemo.data.di
 
-import com.ew8s.cleandemo.cleandemo.data.local.UserDao
-import com.ew8s.cleandemo.cleandemo.data.remote.GitHubService
-import com.ew8s.cleandemo.cleandemo.data.repository.MyRepositoryImpl
-import com.ew8s.cleandemo.cleandemo.domain.repository.MyRepository
+import com.ew8s.cleandemo.data.local.UserDao
+import com.ew8s.cleandemo.data.remote.GitHubService
+import com.ew8s.cleandemo.data.repository.MyRepositoryImpl
+import com.ew8s.cleandemo.domain.repository.MyRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

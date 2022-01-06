@@ -1,4 +1,4 @@
-package com.ew8s.cleandemo.cleandemo.data.local
+package com.ew8s.cleandemo.data.local
 
 import androidx.room.*
 import javax.inject.Inject
