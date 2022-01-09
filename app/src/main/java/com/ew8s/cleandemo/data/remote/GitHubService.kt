@@ -8,13 +8,13 @@ import retrofit2.http.Path
 
 
 interface GitHubService {
-    @GET("users/{user}/repos")
-    suspend fun listRepos(@Path("user") user: String?): Response<Repos>
+//    @GET("users/{user}/repos")
+//    suspend fun listRepos(@Path("user") user: String?): Response<Repos>
+//
+//    @GET("test.php")
+//    suspend fun listReposTest(): Response<Repos>
 
-    @GET("test.php")
-    suspend fun listReposTest(): Response<Repos>
-
-    @GET("lesson.json")
+    @GET("lesson1.json")
     suspend fun getLessons(): Response<Lessons>
 
 }

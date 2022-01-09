@@ -2,11 +2,11 @@
   "formatVersion": 1,
   "database": {
     "version": 1,
-    "identityHash": "2fc8ea90cadc975e4182389d88336ff9",
+    "identityHash": "01ac6e0a65163bb56c6dd26dac3bbcb7",
     "entities": [
       {
         "tableName": "Lesson",
-        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER NOT NULL, `lessons` TEXT NOT NULL, PRIMARY KEY(`id`))",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER NOT NULL, `timetamp` REAL, `lessons` TEXT, PRIMARY KEY(`id`))",
         "fields": [
           {
             "fieldPath": "id",
@@ -15,10 +15,16 @@
             "notNull": true
           },
           {
+            "fieldPath": "timetamp",
+            "columnName": "timetamp",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
             "fieldPath": "lessons",
             "columnName": "lessons",
             "affinity": "TEXT",
-            "notNull": true
+            "notNull": false
           }
         ],
         "primaryKey": {
@@ -34,7 +40,7 @@
     "views": [],
     "setupQueries": [
       "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
-      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '2fc8ea90cadc975e4182389d88336ff9')"
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '01ac6e0a65163bb56c6dd26dac3bbcb7')"
     ]
   }
 }
